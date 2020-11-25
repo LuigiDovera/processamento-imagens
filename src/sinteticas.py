@@ -1,8 +1,7 @@
 from PIL import Image
 import os
+from utils import OUTPUT_DIR, INPUT_DIR
 
-INPUT_DIR = "input"
-OUTPUT_DIR = "output"
 
 # IMPC02 | Sintetizando Imagens: https://youtu.be/kb8S06dpZiM
 def triangulo(size):

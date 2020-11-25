@@ -2,9 +2,15 @@ from PIL import Image, ImageFilter
 import os
 import numpy as np
 
+#Caminho absoluto da pasta do projeto
+PROJECT_DIRECTORY = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 # Caminho relativo das pastas de entrada e saída de imagens
-INPUT_DIR = os.path.join('data', 'input')
-OUTPUT_DIR = os.path.join('data', 'output')
+INPUT_DIR = os.path.join(PROJECT_DIRECTORY, 'data', 'input')
+OUTPUT_DIR = os.path.join(PROJECT_DIRECTORY, 'data', 'output')
+
+def project_directory():
+    return PROJECT_DIRECTORY
 
 
 def in_file(filename):
